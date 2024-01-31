@@ -1,0 +1,24 @@
+header {
+	background-color: #007bff;
+	color: #fff;
+	padding: 15px 0;
+}
+
+section {
+	margin-top: 30px;
+}
+
+.account-info {
+	background-color: #f8f9fa;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+footer {
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
