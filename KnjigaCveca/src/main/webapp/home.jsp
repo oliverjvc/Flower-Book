@@ -51,8 +51,6 @@ footer {
                 <h2>Dobrodošli na stranicu "Prodaja i Uputstva za Očuvanje Cveća"</h2>
                 <p>Saznajte sve o održavanju cveća, gde kupiti, preporuke za zalivanje, prskanje, i još mnogo toga.</p>
 
-                <h4>Olivera</h4>
-                <p>Olivera nudi razne vrste cveća sa detaljnim uputstvima o održavanju. Pogledajte našu ponudu.</p>
 
                 <h4>Linkovi ka radnjama</h4>
                 <p>Posetite naše radnje kako biste pronašli savršeno cveće za vaš vrt.</p>

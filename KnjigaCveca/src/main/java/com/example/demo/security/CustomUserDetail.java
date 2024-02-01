@@ -17,11 +17,20 @@ public class CustomUserDetail implements UserDetails {
 	private static final long serialVersionUID = 1L;
 	private User u;
 	private String email;  // Add the 'email' property
-
+	private String role;
+	
     // Constructors, setters, and other methods
 
-    public String getEmail() {
-        return email;
+    public String getRole() {
+		return u.getRole();
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
+	public String getEmail() {
+        return u.getEmail();
     }
 
 	public User getU() {
@@ -36,7 +45,7 @@ public class CustomUserDetail implements UserDetails {
 	@Override
 	public Collection<? extends GrantedAuthority> getAuthorities() {
 		Collection<SimpleGrantedAuthority> authorities = new ArrayList<SimpleGrantedAuthority>();
-		authorities.add(new SimpleGrantedAuthority("ROLE_" + "USER"));
+		authorities.add(new SimpleGrantedAuthority(this.u.getRole()));
 		return authorities;
 	}
 	@Override
