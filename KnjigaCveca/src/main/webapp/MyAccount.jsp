@@ -12,24 +12,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
-        header {
-            background-color: #007bff;
+        header.navbar {
+            background-color: #28a745 !important; /* Green color */
             color: #fff;
             padding: 15px 0;
         }
 
-        section {
-            margin-top: 30px;
-        }
-
-        .account-info {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
         footer {
-            background-color: #007bff;
+            background-color: #28a745 !important; /* Green color */
             color: #fff;
             padding: 10px 0;
             position: fixed;
@@ -40,12 +30,12 @@
 </head>
 <body style="margin: auto;">
 
-    <header class="text-center py-3">
+    <header class="navbar text-center py-3">
         <h1>My Account</h1>
     </header>
-    <nav class="bg-info text-white py-2">
+    <nav class="bg-success text-white py-2"> <!-- Green color -->
         <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
-            <a class="text-white" href="/KnjigaCveca/logout.jsp">Logout</a>
+            <a href="/KnjigaCveca/logout.jsp" class="btn btn-light text-success">Logout</a> <!-- Bootstrap button styles -->
             <%@include file="header.jsp"%>
         </div>
     </nav>

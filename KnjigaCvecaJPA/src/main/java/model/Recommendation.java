@@ -21,7 +21,7 @@ public class Recommendation implements Serializable {
 	private int recommendationId;
 
 	@Column(name="recommendation_text")
-	private Object recommendationText;
+	private String recommendationText;
 
 	private Timestamp timestamp;
 
@@ -39,11 +39,11 @@ public class Recommendation implements Serializable {
 		this.recommendationId = recommendationId;
 	}
 
-	public Object getRecommendationText() {
+	public String getRecommendationText() {
 		return this.recommendationText;
 	}
 
-	public void setRecommendationText(Object recommendationText) {
+	public void setRecommendationText(String recommendationText) {
 		this.recommendationText = recommendationText;
 	}
 

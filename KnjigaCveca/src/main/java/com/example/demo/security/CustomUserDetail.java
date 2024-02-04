@@ -81,5 +81,10 @@ public class CustomUserDetail implements UserDetails {
 		return true;
 	}
 
+	public int getUserId() {
+		// TODO Auto-generated method stub
+		return u.getUserId();
+	}
+
 
 }

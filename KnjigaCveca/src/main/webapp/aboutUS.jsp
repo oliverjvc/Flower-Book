@@ -14,9 +14,9 @@
     <div class="container mt-4">
         <div class="row">
             <div class="col-md-8">
-                <h2>About Us</h2>
-                <p>Welcome to Your Flower Shop, where the beauty of nature comes to life in vibrant colors and delicate petals. Our journey began with a passion for flowers and a desire to share their enchantment with the world.</p>
-
+                <h2>O nama</h2>
+				<p>Dobrodošli u Vašu cvećaru, gde lepota prirode oživljava u živim bojama i delikatnim laticama. Naše putovanje je počelo sa strašću prema cveću i željom da svoju očaranost podelimo sa svetom.</p>				
+				
                 <h3>Our Mission</h3>
                 <p>At Your Flower Shop, we strive to provide a delightful and immersive floral experience. Our mission is to bring joy, inspiration, and a touch of nature into your life through our carefully curated collection of flowers.</p>
 
