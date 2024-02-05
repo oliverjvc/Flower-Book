@@ -17,14 +17,13 @@
                 <h2>O nama</h2>
 				<p>Dobrodošli u Vašu cvećaru, gde lepota prirode oživljava u živim bojama i delikatnim laticama. Naše putovanje je počelo sa strašću prema cveću i željom da svoju očaranost podelimo sa svetom.</p>				
 				
-                <h3>Our Mission</h3>
-                <p>At Your Flower Shop, we strive to provide a delightful and immersive floral experience. Our mission is to bring joy, inspiration, and a touch of nature into your life through our carefully curated collection of flowers.</p>
-
-                <h3>Our Commitment</h3>
-                <p>We are committed to delivering the highest quality flowers, sourced with care and attention to detail. Each arrangement is crafted with love and creativity, ensuring that it becomes a symbol of the beauty found in nature.</p>
-				
+                <h3>Naša misija</h3>
+				<p>U vašoj cvećari nastojimo da pružimo divno i impresivno cvetno iskustvo. Naša misija je da unesemo radost, inspiraciju i dodir prirode u vaš život kroz našu pažljivo odabranu kolekciju cveća.</p>
+                
+                <h3>Naša obaveza</h3>
+				<p>Posvećeni smo isporuci cveća najvišeg kvaliteta, sa pažnjom i pažnjom posvećenom detaljima. Svaki aranžman je napravljen s ljubavlju i kreativnošću, osiguravajući da postane simbol lepote prirode.</p>				
 				<br>
-				<h3>OUR MOTTO</h3>
+				<h3>Nas moto:</h3>
                 <!-- Add more sections as needed -->
 				<img alt="I expect nothing and I'm still let down." src="https://i.kym-cdn.com/photos/images/original/000/632/211/aa0.png">
 				<br>

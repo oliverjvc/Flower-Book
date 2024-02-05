@@ -58,9 +58,6 @@ footer {
                     <li class="nav-item">
                         <a class="nav-link" href="http://localhost:8080/KnjigaCveca/KnjigaCveca/showAllRecommendations?">Početna</a>
                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="/KnjigaCveca/stores.jsp">Radnje</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/KnjigaCveca/aboutUS.jsp">O nama</a>
                     </li>
@@ -69,7 +66,7 @@ footer {
                     </li>
                     <sec:authorize access="isAuthenticated()">
                         <li class="nav-item">
-                            <a class="nav-link" href="MyAccount.jsp">Dobrodošli, <sec:authentication property="principal.username" /></a>
+                            <a class="nav-link" href="/KnjigaCveca/MyAccount.jsp">Dobrodošli, <sec:authentication property="principal.username" /></a>
                         </li>
                     </sec:authorize>
                     <sec:authorize access="!isAuthenticated()">

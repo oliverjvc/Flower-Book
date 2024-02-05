@@ -14,6 +14,6 @@
 </head>
 <body>
 	
-	<h2>USPEO SI JARANE</h2>
+	<h2>USPESNA REGISTRACIJA</h2>
 </body>
 </html>

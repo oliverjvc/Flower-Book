@@ -74,7 +74,7 @@ footer {
 <body>
 
 	<header class="navbar text-center py-3">
-		<%@include file="header.jsp"%>
+		<%@include file="headerAdmin.jsp"%>
 		<h1>Moj nalog</h1>
 	</header>
 

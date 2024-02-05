@@ -27,7 +27,7 @@ public class SecurityConfig {
             .formLogin(form -> form
                 .loginPage("/login.jsp").permitAll()
                 .loginProcessingUrl("/login")
-                .defaultSuccessUrl("/home.jsp"))
+                .defaultSuccessUrl("/admin/dashboard.jsp"))
             .logout(logout -> logout
                 .logoutUrl("/logout.jsp")  // Specify the logout URL
                 .logoutSuccessUrl("/login.jsp")  // Redirect to login page after logout

@@ -49,6 +49,90 @@ footer {
 	padding: 10px;
 	margin: 20px;
 }
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+/* Style for the container div */
+.recommendation-container {
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	overflow-y: auto;
+}
+
+.recommendation-post {
+	display: inline-block;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.post-content {
+	padding: 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+	width: 400px;
+	height: 200px;
+}
+
+textarea {
+	width: 100%;
+	/* Make textarea width 100% of its parent (.recommendation-post) */
+	height: 100%;
+	/* Make textarea height 100% of its parent (.recommendation-post) */
+	border: none; /* Remove textarea border for a cleaner look */
+	resize: none;
+	margin-bottom: 10px; /* Add margin between textarea and button */
+}
+
+/* Style for the button */
+button {
+	padding: 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #45a049;
+}
+
+.submit-button {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+.submit-button:hover {
+	background-color: #45a049;
+}
+
+/* Add this style to your existing CSS styles */
+.comment-link {
+	color: black; /* Set the desired text color */
+	text-decoration: none; /* Remove underlining */
+	background: none; /* Remove any background color */
+	border: none; /* Remove border if needed */
+	cursor: pointer;
+	padding: 0; /* Adjust padding as needed */
+}
+
+.comment-link:hover {
+	/* Optional: Add styles for hover state */
+	text-decoration: underline; /* Add underlining on hover if desired */
+}
 </style>
 </head>
 
@@ -64,10 +148,9 @@ footer {
 				<p>Saznajte sve o održavanju cveća, gde kupiti, preporuke za
 					zalivanje, prskanje, i još mnogo toga.</p>
 
-				<h2>NAPRAVI POST</h2>
+				<!-- 	<h2>NAPRAVI POST</h2>
 				<a href="admin/dashboard.jsp" class="btn btn-primary"> dodaj</a> <br></br>
-
-				
+				 -->
 
 
 				<h4>Linkovi ka radnjama</h4>
@@ -79,30 +162,11 @@ footer {
 					class="btn btn-primary">Radnja 2</a>
 				<!-- Dodajte ostale linkove po potrebi -->
 
-				<h4>Komentari Ljudi</h4>
-				<div>
-					<p>Pročitajte iskustva drugih ljudi sa našim cvećem:</p>
-					<!-- Prikazi komentare ljudi -->
-										
-				</div>
-				<form>
-					<div class="mb-3">
-						<label for="changeRecommendation" class="form-label">Imate
-							li preporuku za promene na stranici?</label>
-						<textarea class="form-control" id="changeRecommendation"
-							name="changeRecommendation" rows="3"></textarea>
-					</div>
-					<button type="submit" class="btn btn-primary">Pošalji
-						Preporuku</button>
-				</form>
-			</div>
-
-			<div class="col-md-4">
-				<!-- Prikazi korisničke profile, bašte i povezane linkove -->
-				<!-- Dodaj obavezno administratora i korisnike -->
 			</div>
 		</div>
 	</div>
+	
+
 
 	<!-- Dodajte Bootstrap JS i ostale skripte po potrebi -->
 	<script

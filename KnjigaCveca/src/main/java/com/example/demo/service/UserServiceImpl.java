@@ -42,7 +42,11 @@ public class UserServiceImpl implements UserService {
         
         return true;
     }
-       
+    
+    public String getRole(String username) {
+    	User u = userRepository.getByName(username);
+    	return u.getRole();
+    }
 	
 
 	@Override

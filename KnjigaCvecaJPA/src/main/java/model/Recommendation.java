@@ -14,6 +14,7 @@ import java.sql.Timestamp;
 @NamedQuery(name="Recommendation.findAll", query="SELECT r FROM Recommendation r")
 public class Recommendation implements Serializable {
 	private static final long serialVersionUID = 1L;
+	
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
