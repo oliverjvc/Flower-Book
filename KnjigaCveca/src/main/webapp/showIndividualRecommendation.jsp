@@ -9,12 +9,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Individual Recommendation</title>
-<style>
-body {
-	font-family: Arial, sans-serif;
-	text-align: center;
-	margin-top: 20px;
-}
+<style> body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('<%= request.getContextPath() %>/background/pozadina.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat;         
+        }
+
 
 .individual-recommendation {
 	width: 60%;

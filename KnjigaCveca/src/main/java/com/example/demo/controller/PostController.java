@@ -16,10 +16,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.example.demo.service.CommentService;
 import com.example.demo.service.CommentServiceImpl;
 import com.example.demo.service.RecommendationServiceImpl;
+import com.example.demo.service.StoreServiceImpl;
 
 import jakarta.servlet.http.HttpSession;
 import model.Comment;
 import model.Recommendation;
+import model.Store;
 import model.User;
 
 @Controller
@@ -34,6 +36,9 @@ public class PostController {
 
 	@Autowired
 	private CommentServiceImpl commentServiceImpl;
+	
+	@Autowired
+	private StoreServiceImpl storeService;
 
 	@PostMapping("/addComment")
 	public String addComment(@RequestParam("commentText") String commentText,
@@ -132,4 +137,11 @@ public class PostController {
 		}
 		return "showIndividualRecommendation"; 
 	}
+	
+	   @GetMapping("/stores")
+	    public String getAllStores(Model model) {
+	        List<Store> stores = storeService.getAllStores();
+	        model.addAttribute("stores", stores);
+	        return "storesAll";
+	    }
 }

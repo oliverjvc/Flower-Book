@@ -55,7 +55,7 @@ public class AdminController {
         // Save the recommendation
         recommendationService.saveRecommendation(rec);
 
-        return "redirect:/home.jsp"; // Redirect to the admin dashboard or any other page
+        return "redirect:/admin/dashboard.jsp"; // Redirect to the admin dashboard or any other page
     }
 
     private int getUserId(Principal principal) {

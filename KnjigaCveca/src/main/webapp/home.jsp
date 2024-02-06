@@ -19,13 +19,22 @@
 
 
 <style>
+body {
+	font-family: 'Arial', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image:
+		url('<%=request.getContextPath()%>/background/pozadina2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 header {
 	background-color: #007bff;
 	color: #fff;
 	padding: 15px 0;
-	opacity: 1; /* Set opacity to 1 to remove transparency */
+	opacity: 1; 
 }
-
 
 section {
 	margin-top: 30px;
@@ -56,7 +65,6 @@ body {
 	font-family: Arial, sans-serif;
 }
 
-/* Style for the container div */
 .recommendation-container {
 	width: 100%;
 	text-align: center;
@@ -145,8 +153,7 @@ button:hover {
 	<div class="container mt-4">
 		<div class="row">
 			<div class="col-md-8">
-				<h2>Dobrodošli na stranicu "Prodaja i Uputstva za Očuvanje
-					Cveća"</h2>
+				<h2>Dobrodošli na stranicu sa uputstvima za održavanje cveća</h2>
 				<p>Saznajte sve o održavanju cveća, gde kupiti, preporuke za
 					zalivanje, prskanje, i još mnogo toga.</p>
 
@@ -167,7 +174,7 @@ button:hover {
 			</div>
 		</div>
 	</div>
-	
+
 
 
 	<!-- Dodajte Bootstrap JS i ostale skripte po potrebi -->

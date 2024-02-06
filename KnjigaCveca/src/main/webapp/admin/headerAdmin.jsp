@@ -92,7 +92,7 @@ footer {
                         <a class="nav-link" href="http://localhost:8080/KnjigaCveca/KnjigaCveca/showAllRecommendations?">Objave</a>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="/KnjigaCveca/admin/stores.jsp">Radnje</a>
+                        <a class="nav-link" href="http://localhost:8080/KnjigaCveca/KnjigaCveca/stores?">Radnje</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/KnjigaCveca/aboutUS.jsp">O nama</a>

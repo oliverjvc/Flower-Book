@@ -9,11 +9,16 @@
 <title>posts</title>
 
 <style>
-body {
-	font-family: Arial, sans-serif;
-}
+ body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('<%= request.getContextPath() %>/background/pozadina2.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat;         
+        }
 
-/* Style for the container div */
+
 .recommendation-container {
 	width: 100%;
 	text-align: center;
@@ -40,18 +45,15 @@ body {
 
 textarea {
 	width: 100%;
-	/* Make textarea width 100% of its parent (.recommendation-post) */
 	height: 100%;
-	/* Make textarea height 100% of its parent (.recommendation-post) */
 	border: none; /* Remove textarea border for a cleaner look */
 	resize: none;
 	margin-bottom: 10px; /* Add margin between textarea and button */
 }
 
-/* Style for the button */
 button {
 	padding: 10px;
-	background-color: #4CAF50;
+	background-color:#d64161;
 	color: white;
 	border: none;
 	border-radius: 4px;
@@ -59,14 +61,14 @@ button {
 }
 
 button:hover {
-	background-color: #45a049;
+	background-color: #eca1a6;
 }
 
 .submit-button {
 	display: block;
 	width: 100%;
 	padding: 10px;
-	background-color: #4CAF50;
+	background-color: #d64161;
 	color: white;
 	border: none;
 	border-radius: 4px;
@@ -75,14 +77,14 @@ button:hover {
 }
 
 .submit-button:hover {
-	background-color: #45a049;
+	background-color: #eca1a6;
 }
 
 .comment-link {
 	color: #fff; /* Set the desired text color */
 	text-decoration: none; /* Remove underlining */
-	background-color: #007BFF; /* Set background color */
-	border: 2px solid #007BFF; /* Add a border */
+	background-color: #d64161; /* Set background color */
+	border: 2px solid #d64161; /* Add a border */
 	border-radius: 5px; /* Make it round */
 	padding: 5px 10px; /* Adjust padding as needed */
 	display: inline-block; /* Make it a block element */
@@ -92,7 +94,7 @@ button:hover {
 }
 
 .comment-link:hover {
-	background-color: #0056b3; /* Change background color on hover */
+	background-color: #eca1a6; /* Change background color on hover */
 	color: #fff; /* Change text color on hover */
 	text-decoration: none; /* Remove underlining on hover if desired */
 }
@@ -105,10 +107,8 @@ button:hover {
 	<div class="container mt-4">
 		<div class="row">
 			<div class="col-md-8">
-				<h2>Dobrodošli na stranicu "Prodaja i Uputstva za Očuvanje
-					Cveća"</h2>
-				<p>Saznajte sve o održavanju cveća, gde kupiti, preporuke za
-					zalivanje, prskanje, i još mnogo toga.</p>
+				<h2>Dobrodošli na stranicu za uputstva o očuvanju cveća</h2>
+				<p>Saznajte sve o održavanju cveća, gde kupiti, i još mnogo toga.</p>
 
 				<!-- 	<h2>NAPRAVI POST</h2>
 				<a href="admin/dashboard.jsp" class="btn btn-primary"> dodaj</a> <br></br>
@@ -119,17 +119,12 @@ button:hover {
 				<h4>Linkovi ka radnjama</h4>
 				<p>Posetite naše radnje kako biste pronašli savršeno cveće za
 					vaš vrt.</p>
-				<a href="https://www.cvecarastrelitzia.com/" target="_blank"
-					class="btn btn-primary">Radnja 1</a> <a
-					href="https://www.dalija.rs/" target="_blank"
-					class="btn btn-primary">Radnja 2</a>
-				<!-- Dodajte ostale linkove po potrebi -->
-
+				<a href="http://localhost:8080/KnjigaCveca/KnjigaCveca/stores?" class="btn btn-primary">Radnje</a>
 			</div>
 		</div>
 	</div>
 	
-	<h2>BLOG POSTS</h2>
+	<h2>Objave:</h2>
 	<form
 		action="${pageContext.request.contextPath}/KnjigaCveca/showAllRecommendations"
 		method="get">
@@ -144,7 +139,7 @@ button:hover {
 				</div>
 				<button class="comment-link"
 					onclick="window.location.href='${pageContext.request.contextPath}/KnjigaCveca/showIndividualRecommendation?id=${recommendation.recommendationId}&userId=${yourUserId}'">
-					Pogledati komentare</button>
+					Pogledati celu objavu</button>
 			</div>
 		</c:forEach>
 	</div>

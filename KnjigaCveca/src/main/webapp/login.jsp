@@ -17,7 +17,7 @@
     <button type="submit">Login</button>
 </form> 
 
-	<a href="${pageContext.request.contextPath}/registration">You dont have account?</a>
+	<a href="${pageContext.request.contextPath}/registration">Nemate nalog?</a>
 
 </body>
 </html>

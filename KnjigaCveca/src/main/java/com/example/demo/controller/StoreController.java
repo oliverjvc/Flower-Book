@@ -1,7 +1,11 @@
 package com.example.demo.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -11,7 +15,7 @@ import com.example.demo.service.StoreService;
 import model.Store;
 
 @Controller
-@RequestMapping("/KnjigaCveca/")
+@RequestMapping("/admin/")
 public class StoreController {
 
     @Autowired
@@ -35,9 +39,6 @@ public class StoreController {
         storeService.saveStore(store);
 
         // Redirect to a confirmation page or any other page as needed
-        return "redirect:/KnjigaCveca/storeConfirmation";
+        return "admin/storeConfirmation";
     }
-
-    // Add other methods as needed
-
 }
