@@ -23,7 +23,9 @@ header {
 	background-color: #007bff;
 	color: #fff;
 	padding: 15px 0;
+	opacity: 1; /* Set opacity to 1 to remove transparency */
 }
+
 
 section {
 	margin-top: 30px;

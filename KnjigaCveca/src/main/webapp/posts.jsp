@@ -78,25 +78,30 @@ button:hover {
 	background-color: #45a049;
 }
 
-/* Add this style to your existing CSS styles */
 .comment-link {
-	color: black; /* Set the desired text color */
+	color: #fff; /* Set the desired text color */
 	text-decoration: none; /* Remove underlining */
-	background: none; /* Remove any background color */
-	border: none; /* Remove border if needed */
+	background-color: #007BFF; /* Set background color */
+	border: 2px solid #007BFF; /* Add a border */
+	border-radius: 5px; /* Make it round */
+	padding: 5px 10px; /* Adjust padding as needed */
+	display: inline-block; /* Make it a block element */
+	transition: background-color 0.3s, color 0.3s;
+	/* Add a smooth transition effect */
 	cursor: pointer;
-	padding: 0; /* Adjust padding as needed */
 }
 
 .comment-link:hover {
-	/* Optional: Add styles for hover state */
-	text-decoration: underline; /* Add underlining on hover if desired */
+	background-color: #0056b3; /* Change background color on hover */
+	color: #fff; /* Change text color on hover */
+	text-decoration: none; /* Remove underlining on hover if desired */
 }
+
 </style>
 </head>
 <body>
 	<%@include file="header2.jsp"%>
-	
+
 	<div class="container mt-4">
 		<div class="row">
 			<div class="col-md-8">
@@ -105,10 +110,10 @@ button:hover {
 				<p>Saznajte sve o održavanju cveća, gde kupiti, preporuke za
 					zalivanje, prskanje, i još mnogo toga.</p>
 
-			<!-- 	<h2>NAPRAVI POST</h2>
+				<!-- 	<h2>NAPRAVI POST</h2>
 				<a href="admin/dashboard.jsp" class="btn btn-primary"> dodaj</a> <br></br>
 			 -->
-				
+
 
 
 				<h4>Linkovi ka radnjama</h4>
@@ -123,7 +128,8 @@ button:hover {
 			</div>
 		</div>
 	</div>
-
+	
+	<h2>BLOG POSTS</h2>
 	<form
 		action="${pageContext.request.contextPath}/KnjigaCveca/showAllRecommendations"
 		method="get">

@@ -40,12 +40,10 @@ footer {
 	width: 100%;
 }
 </style>
-    <!-- Add other stylesheets or scripts as needed -->
 </head>
 
 <body>
 
-    <!-- Your site's navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Knjiga cveća</a>
@@ -56,7 +54,7 @@ footer {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="http://localhost:8080/KnjigaCveca/KnjigaCveca/showAllRecommendations?">Početna</a>
+                        <a class="nav-link" href="/KnjigaCveca/admin/dashboard.jsp">Početna</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/KnjigaCveca/aboutUS.jsp">O nama</a>
@@ -74,13 +72,11 @@ footer {
                             <a class="nav-link" href="/KnjigaCveca/login.jsp">Prijavljivanje</a>
                         </li>
                     </sec:authorize>
-                    <!-- Add more menu items as needed -->
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Add more elements to your header if necessary -->
 
 </body>
 

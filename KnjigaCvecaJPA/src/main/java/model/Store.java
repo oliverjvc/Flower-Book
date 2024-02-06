@@ -19,11 +19,21 @@ public class Store implements Serializable {
 	@Column(name="store_id")
 	private int storeId;
 
+	public String getPic() {
+		return pic;
+	}
+
+	public void setPic(String pic) {
+		this.pic = pic;
+	}
+
 	private String link;
 
 	private String location;
 
 	private String name;
+	
+	private String pic;
 
 	public Store() {
 	}

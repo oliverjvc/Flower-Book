@@ -22,9 +22,8 @@ import model.Comment;
 import model.Recommendation;
 import model.User;
 
-//YourController.java
 @Controller
-@RequestMapping("/KnjigaCveca") // Add this annotation at the class level
+@RequestMapping("/KnjigaCveca") 
 public class PostController {
 
 	@Autowired
@@ -41,21 +40,16 @@ public class PostController {
 			@RequestParam("recommendationId") int recommendationId, HttpSession session) {
 
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-		String name = authentication.getName(); // This assumes the userId is stored as the username
-		// Retrieve userId from the session
+		String name = authentication.getName(); 
 
 		int userId = 0;
 
 		User u = commentServiceImpl.getUserByName(name);
 		userId = u.getUserId();
-		// Check if userId is not available in the session
 		if (userId == 0) {
-			// Handle the case where userId is not found in the session
-			// You may want to redirect to a login page or take appropriate action
-			return "redirect:/login"; // Adjust the redirect URL as needed
+			return "redirect:/login"; 
 		}
 
-		// Print or log the userId for debugging
 		System.out.println("User ID: " + userId);
 
 		Comment comment = new Comment();
@@ -72,7 +66,7 @@ public class PostController {
 
 	@GetMapping("/showRecommendation")
 	public String showRecommendation(Model model) {
-		int recommendationId = 1; // Replace with the actual ID you want to display
+		int recommendationId = 1; 
 		Recommendation recommendation = recommendationService.getRecommendationById(recommendationId);
 
 		if (recommendation != null) {
@@ -81,7 +75,7 @@ public class PostController {
 			model.addAttribute("recommendationText", "No recommendation found");
 		}
 
-		return "show_recommendation"; // Replace with the actual JSP file name
+		return "show_recommendation"; 
 	}
 
 	@GetMapping("/")
@@ -91,20 +85,18 @@ public class PostController {
 		return "posts";
 	}
 
-	// Add this method in your controller
 	@GetMapping("/showAllRecommendations")
 	public String showAllRecommendations(Model model) {
 		List<Recommendation> recommendations = recommendationService.getAllRecommendations();
 		model.addAttribute("recommendations", recommendations);
-		return "posts"; // Replace with the actual JSP file name
+		return "posts"; 
 	}
 	
-	// Add this method in your controller
 		@GetMapping("/showAllRecommendations2")
 		public String showAllRecommendations2(Model model) {
 			List<Recommendation> recommendations = recommendationService.getAllRecommendations();
 			model.addAttribute("recommendations", recommendations);
-			return "home"; // Replace with the actual JSP file name
+			return "home"; 
 		}
 
 	@GetMapping("/showIndividualRecommendation")
@@ -114,11 +106,9 @@ public class PostController {
 		if (recommendation != null) {
 			model.addAttribute("individualRecommendation", recommendation);
 
-			// Fetch comments for the recommendation from CommentRepository
 			List<Comment> comments = commentService.getCommentsByRecommendationId(recommendation.getRecommendationId());
 			model.addAttribute("comments", comments);
 
-			// Add userId to the model
 			Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 			if (authentication != null && authentication.isAuthenticated()) {
 				Object principal = authentication.getPrincipal();
@@ -128,12 +118,10 @@ public class PostController {
 				}
 			}
 		} else {
-			// Handle case where recommendation is not found
-			// You might want to redirect or show an error message
-			return "redirect:/KnjigaCveca/posts"; // Redirect to the posts page
+			return "redirect:/KnjigaCveca/posts"; 
 		}
 
-		return "showIndividualRecommendation"; // Return the JSP page
+		return "showIndividualRecommendation"; 
 	}
 
 	@PostMapping("/showComments")
@@ -142,6 +130,6 @@ public class PostController {
 		if (comments != null) {
 			model.addAttribute("comments", comments);
 		}
-		return "showIndividualRecommendation"; // Adjust the view name as needed
+		return "showIndividualRecommendation"; 
 	}
 }

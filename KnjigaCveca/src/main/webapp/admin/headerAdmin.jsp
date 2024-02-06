@@ -15,31 +15,61 @@
 
 
 <style>
-header {
-	background-color: #007bff;
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Arial', sans-serif;
+}
+
+header.navbar {
+	background-color: #007BFF !important; /* Blue color */
 	color: #fff;
 	padding: 15px 0;
+	text-align: left;
 }
 
-section {
-	margin-top: 30px;
+nav.bg-success {
+	background-color: #007BFF !important; /* Blue color */
+	color: #fff;
+	padding: 10px 0;
 }
 
-.account-info {
-	background-color: #f8f9fa;
-	padding: 20px;
-	border-radius: 8px;
+nav .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a.btn {
+	color: #007BFF;
+	background-color: #fff;
+	border: none;
+}
+
+section.container {
+	margin-top: 50px;
+}
+
+.account-info ul {
+	list-style: none;
+	padding: 0;
+}
+
+.account-info ul li {
+	margin-bottom: 10px;
 }
 
 footer {
-	background-color: #007bff;
+	background-color: #007BFF !important; /* Blue color */
 	color: #fff;
 	padding: 10px 0;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
+	text-align: center;
 }
 </style>
+
     <!-- Add other stylesheets or scripts as needed -->
 </head>
 
@@ -62,7 +92,7 @@ footer {
                         <a class="nav-link" href="http://localhost:8080/KnjigaCveca/KnjigaCveca/showAllRecommendations?">Objave</a>
                     </li>
                      <li class="nav-item">
-                        <a class="nav-link" href="/KnjigaCveca/stores.jsp">Radnje</a>
+                        <a class="nav-link" href="/KnjigaCveca/admin/stores.jsp">Radnje</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/KnjigaCveca/aboutUS.jsp">O nama</a>

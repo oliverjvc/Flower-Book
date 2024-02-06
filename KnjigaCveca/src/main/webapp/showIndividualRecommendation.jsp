@@ -40,7 +40,7 @@ textarea {
 
 .submit-button {
 	padding: 10px;
-	background-color: #4CAF50;
+	background-color: #007BFF;
 	color: white;
 	border: none;
 	border-radius: 4px;
@@ -48,7 +48,7 @@ textarea {
 }
 
 .submit-button:hover {
-	background-color: #45a049;
+	background-color: #0056b3;
 }
 
 .comment-section {
