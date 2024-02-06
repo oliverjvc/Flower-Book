@@ -10,9 +10,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.example.demo.security.CustomUserDetailService;
 import com.example.demo.service.StoreService;
 
 import model.Store;
+import model.User;
 
 @Controller
 @RequestMapping("/admin/")
@@ -41,4 +43,7 @@ public class StoreController {
         // Redirect to a confirmation page or any other page as needed
         return "admin/storeConfirmation";
     }
+    
+	
+
 }

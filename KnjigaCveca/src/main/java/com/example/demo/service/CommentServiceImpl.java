@@ -36,4 +36,8 @@ public class CommentServiceImpl implements CommentService {
     	return commentRepository.allCommentsWithRecommendationId(id);
     }
 
+//	public void deleteCommentWithUserId(int userId) {
+//		commentRepository.deleteCommentById(userId);
+//	}
+
 }

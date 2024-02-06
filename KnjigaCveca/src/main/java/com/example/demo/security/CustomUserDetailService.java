@@ -1,11 +1,8 @@
 package com.example.demo.security;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -28,5 +25,13 @@ public class CustomUserDetailService implements UserDetailsService {
             throw new UsernameNotFoundException("User not found with username: " + username);
         }
         return new CustomUserDetail(user);
+	}
+	
+	public List<User> getAllUsers(){
+		return ur.findAll();
+	}
+
+	public void deleteUserById(int userId) {
+		ur.deleteById(userId);		
 	}
 }

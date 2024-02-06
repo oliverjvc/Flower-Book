@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Store Information Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             background-color: #f8f9fa;
@@ -49,28 +51,39 @@
 </head>
 <body>
 
-    <h2>Enter Store Information</h2>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h2 class="mt-4 mb-3">‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎‎ Unesite informacije o radnji</h2>
 
-    <form action="${pageContext.request.contextPath}/admin/processStoreForm" method="post">
-        <!-- Name of the store -->
-        <label for="storeName">Store Name:</label>
-        <input type="text" id="storeName" name="storeName" required>
+                <form action="${pageContext.request.contextPath}/admin/processStoreForm" method="post">
+                    <div class="mb-3">
+                        <label for="storeName" class="form-label">Ime radnje:</label>
+                        <input type="text" id="storeName" name="storeName" class="form-control" required>
+                    </div>
 
-        <!-- Location of the store -->
-        <label for="storeLocation">Store Location:</label>
-        <input type="text" id="storeLocation" name="storeLocation" required>
+                    <div class="mb-3">
+                        <label for="storeLocation" class="form-label">Lokacija radnje:</label>
+                        <input type="text" id="storeLocation" name="storeLocation" class="form-control" required>
+                    </div>
 
-        <!-- Link to the store's website -->
-        <label for="websiteLink">Website Link:</label>
-        <input type="text" id="websiteLink" name="websiteLink" required>
+                    <div class="mb-3">
+                        <label for="websiteLink" class="form-label">Website:</label>
+                        <input type="text" id="websiteLink" name="websiteLink" class="form-control" required>
+                    </div>
 
-        <!-- Another link (example) -->
-        <label for="additionalLink">Additional Link:</label>
-        <input type="text" id="additionalLink" name="additionalLink">
+                    <div class="mb-3">
+                        <label for="additionalLink" class="form-label">Link za logo:</label>
+                        <input type="text" id="additionalLink" name="additionalLink" class="form-control">
+                    </div>
 
-        <!-- Submit button -->
-        <input type="submit" value="Submit">
-    </form>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

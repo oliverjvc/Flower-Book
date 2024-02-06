@@ -8,7 +8,7 @@
 
  <script type="text/javascript">
         setTimeout(function(){
-            window.location.href = "${pageContext.request.contextPath}/login.jsp";
+            window.location.href = "http://localhost:8080/KnjigaCveca/admin/getAllUsers?";
         }, 1); // Redirect after 3000 milliseconds (3 seconds)
     </script>
 </head>

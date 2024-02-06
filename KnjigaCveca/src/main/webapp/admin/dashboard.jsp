@@ -65,11 +65,15 @@
                 <h2>Dobrodošli na stranicu za upravljanje sistemom</h2>
 
                 <br>
-                <h2>NAPRAVI POST</h2>
+                <h2>Napravi objavu</h2>
                 <a href="writePost.jsp" class="btn btn-primary"> dodaj</a> <br><br>
 
                 <h2>Dodaj radnju</h2>
                 <a href="stores.jsp" class="btn btn-primary"> dodaj</a> <br><br>
+                
+                <br>
+                <h2>Vidi sve korisnike</h2>
+                <a href="http://localhost:8080/KnjigaCveca/admin/getAllUsers?" class="btn btn-primary">Pogledaj</a>
             </div>
         </div>
     </div>
