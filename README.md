@@ -1,6 +1,6 @@
 GreenHub 🌿
 
-GreenHub is a web application designed to connect gardening enthusiasts. It serves as a community-driven platform for sharing knowledge, discovering local shops, and engaging with blog posts about gardening. With a secure user authentication system and administrative controls, GreenHub fosters a safe, interactive environment for both users and admins.
+GreenHub is a web application designed to connect gardening enthusiasts. It serves as a platform for sharing knowledge, discovering local shops, and engaging with blog posts about gardening. With a secure user authentication system and administrative controls, GreenHub fosters a safe, interactive environment for both users and admins.
 
 Features
 User Interactions: Users can comment on blog posts, interact with others, and follow gardening trends.
