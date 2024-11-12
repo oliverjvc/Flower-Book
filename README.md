@@ -25,7 +25,7 @@ git clone https://github.com/oliverjvc/GreenHub.git
 cd GreenHub
 
 Set up the MySQL database:
-Create a database named greenhub.
+Create a database named knjigacveca.
 Update the database connection settings in src/main/resources/application.properties.
 
 Run the backend:
